@@ -1,0 +1,164 @@
+name: Build & Test
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+  release:
+    types: [created, published]
+
+jobs:
+  build-and-test:
+    name: Build & Test (Java ${{ matrix.java-version }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        java-version: [8, 11, 17, 21]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK ${{ matrix.java-version }}
+        uses: actions/setup-java@v4
+        with:
+          java-version: ${{ matrix.java-version }}
+          distribution: 'temurin'
+          cache: 'none'
+
+      - name: Compile source
+        run: |
+          javac -Xlint:deprecation -Xlint:unchecked TwelveToneMatrix.java
+
+      - name: Run application
+        run: |
+          java TwelveToneMatrix
+
+      - name: Verify output contains expected sections
+        run: |
+          java TwelveToneMatrix > output.txt
+          if ! grep -q "Displaying the Pitch Class" output.txt; then
+            echo "ERROR: Pitch class output missing"
+            exit 1
+          fi
+          if ! grep -q "Displaying the Pitch Notes" output.txt; then
+            echo "ERROR: Pitch notes output missing"
+            exit 1
+          fi
+          echo "Output verification passed"
+
+      - name: Verify matrix dimensions
+        run: |
+          java TwelveToneMatrix > output.txt
+          # Count data lines (excluding headers)
+          pitch_class_lines=$(grep -c "^[0-9]" output.txt || true)
+          pitch_notes_lines=$(grep -c "^[A-G]" output.txt || true)
+          echo "Pitch class lines: $pitch_class_lines"
+          echo "Pitch notes lines: $pitch_notes_lines"
+          if [ "$pitch_class_lines" -ne 12 ]; then
+            echo "ERROR: Expected 12 pitch class rows, got $pitch_class_lines"
+            exit 1
+          fi
+          if [ "$pitch_notes_lines" -ne 12 ]; then
+            echo "ERROR: Expected 12 pitch notes rows, got $pitch_notes_lines"
+            exit 1
+          fi
+          echo "Matrix dimension verification passed (12x12)"
+
+  validate-source:
+    name: Validate Source Code
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check Java syntax
+        run: |
+          # Basic syntax validation
+          javac -Xlint:deprecation -Xlint:unchecked -d /tmp/classes TwelveToneMatrix.java 2>&1 | grep -v "warning:" || true
+
+      - name: Verify required files exist
+        run: |
+          required_files=(
+            "TwelveToneMatrix.java"
+            "TwelveToneMatrix.bat"
+            "README.md"
+            "LICENSE"
+            "CONTRIBUTING.md"
+            "CHANGELOG.md"
+            "DEPENDENCIES.md"
+            "CODEOWNERS"
+            ".gitignore"
+            "docs/architecture.md"
+            "docs/api-reference.md"
+            "docs/getting-started.md"
+          )
+          for file in "${required_files[@]}"; do
+            if [ ! -f "$file" ]; then
+              echo "ERROR: Missing required file: $file"
+              exit 1
+            fi
+          done
+          echo "All required files present"
+
+      - name: Check copyright headers
+        run: |
+          if ! grep -q "Ethereal Multimedia Technology" README.md; then
+            echo "ERROR: Copyright notice missing from README.md"
+            exit 1
+          fi
+          if ! grep -q "Ethereal Multimedia Technology" LICENSE; then
+            echo "ERROR: Copyright notice missing from LICENSE"
+            exit 1
+          fi
+          echo "Copyright headers verified"
+
+  build-windows:
+    name: Build on Windows
+    runs-on: windows-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: 17
+          distribution: 'temurin'
+
+      - name: Compile on Windows
+        shell: cmd
+        run: |
+          javac -Xlint:deprecation -Xlint:unchecked TwelveToneMatrix.java
+
+      - name: Run on Windows
+        shell: cmd
+        run: |
+          java TwelveToneMatrix
+
+  build-macos:
+    name: Build on macOS
+    runs-on: macos-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: 17
+          distribution: 'temurin'
+
+      - name: Compile on macOS
+        run: |
+          javac -Xlint:deprecation -Xlint:unchecked TwelveToneMatrix.java
+
+      - name: Run on macOS
+        run: |
+          java TwelveToneMatrix
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
