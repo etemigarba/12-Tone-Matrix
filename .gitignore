@@ -1,0 +1,211 @@
+# .gitignore for 12 Tone Matrix Java Project
+# 
+# This project uses direct javac compilation with no build tools.
+# Adjust patterns if migrating to Maven/Gradle.
+
+# ============================================================
+# COMPILED OUTPUT
+# ============================================================
+*.class
+
+# ============================================================
+# PACKAGE FILES
+# ============================================================
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# ============================================================
+# BUILD TOOLS (if adopted in future)
+# ============================================================
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Gradle
+.gradle/
+build/
+/*/build/
+gradle-app.setting
+!gradle-wrapper.jar
+.gradle/**/gradle-wrapper.jar
+
+# Ant
+build.xml
+
+# ============================================================
+# IDE & EDITOR FILES
+# ============================================================
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+*.orig
+
+# Eclipse
+.project
+.classpath
+.settings/
+bin/
+*.launch
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# NetBeans
+nbproject/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# Other editors
+*.swp
+*.swo
+*~
+.vim/
+.viminfo
+
+# ============================================================
+# OS GENERATED FILES
+# ============================================================
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+__MACOSX
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+# ============================================================
+# LOG & TEMP FILES
+# ============================================================
+*.log
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+*.orig
+*.patch
+
+# ============================================================
+# TEST & COVERAGE (if added)
+# ============================================================
+# JUnit
+junit-*.xml
+TEST-*.xml
+
+# Coverage
+jacoco/
+coverage/
+*.exec
+*.ec
+
+# ============================================================
+# DOCUMENTATION GENERATION (if added)
+# ============================================================
+docs/api/
+site/
+target/site/
+apidocs/
+
+# ============================================================
+# DEPLOYMENT (if added)
+# ============================================================
+# Docker
+.dockerignore
+
+# Kubernetes
+*.kubeconfig
+
+# ============================================================
+# PROJECT SPECIFIC
+# ============================================================
+# Keep source and documentation
+!TwelveToneMatrix.java
+!TwelveToneMatrix.bat
+!README.md
+!LICENSE
+!CONTRIBUTING.md
+!CHANGELOG.md
+!DEPENDENCIES.md
+!CODEOWNERS
+!docs/
+!Archive/
+
+# ============================================================
+# SECRETS & CREDENTIALS (never commit)
+# ============================================================
+*.pem
+*.key
+*.cer
+*.crt
+*.p12
+*.pfx
+*.keystore
+*.jks
+*.properties
+!*.properties.example
+!*.properties.template
+*.env
+.env.local
+.env.*.local
+
+# ============================================================
+# MISCELLANEOUS
+# ============================================================
+# Eclipse Metadata
+*.classpath
+*.project
+.settings/
+
+# Maven Wrapper
+.mvn/wrapper/maven-wrapper.properties
+
+# Gradle Wrapper
+gradlew
+gradlew.bat
+gradle/
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+
+# ============================================================
+# NOTES
+# ============================================================
+# This project currently tracks TwelveToneMatrix.class in git
+# for convenience (pre-compiled binary). Remove *.class from
+# ignored patterns if you prefer source-only repository.
+#
+# To stop tracking .class files:
+#   git rm --cached *.class
+#   echo "*.class" >> .gitignore

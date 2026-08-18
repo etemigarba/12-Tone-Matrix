@@ -1,0 +1,40 @@
+# CODEOWNERS
+# 
+# This file defines code ownership for the 12 Tone Matrix project.
+# All changes require review from the listed owners.
+# 
+# CRITICAL: This project is the intellectual property of Ethereal Multimedia Technology.
+# Explicit written permission is required for ANY adoption, editing, refactoring,
+# or redistribution of this codebase.
+
+# Global ownership - all files
+* @EtherealMultimediaTechnology
+
+# Source code
+TwelveToneMatrix.java @EtherealMultimediaTechnology
+TwelveToneMatrix.bat @EtherealMultimediaTechnology
+
+# Documentation
+README.md @EtherealMultimediaTechnology
+LICENSE @EtherealMultimediaTechnology
+CONTRIBUTING.md @EtherealMultimediaTechnology
+CHANGELOG.md @EtherealMultimediaTechnology
+DEPENDENCIES.md @EtherealMultimediaTechnology
+CODEOWNERS @EtherealMultimediaTechnology
+
+# Documentation directory
+docs/ @EtherealMultimediaTechnology
+
+# Archive (historical versions)
+Archive/ @EtherealMultimediaTechnology
+
+# GitHub workflows (if added)
+.github/ @EtherealMultimediaTechnology
+
+# Build artifacts (if tracked)
+*.class @EtherealMultimediaTechnology
+*.jar @EtherealMultimediaTechnology
+
+# NOTE: Replace @EtherealMultimediaTechnology with actual GitHub username/organization
+# when the organization account is created. For now, this indicates the legal entity
+# that owns all rights to this codebase.

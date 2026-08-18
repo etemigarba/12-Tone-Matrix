@@ -1,0 +1,71 @@
+PROPRIETARY LICENSE AGREEMENT
+==============================
+
+Copyright © 2016 Ethereal Multimedia Technology. All rights reserved.
+
+This software and associated documentation files (the "Software") are the exclusive 
+intellectual property of Ethereal Multimedia Technology ("Owner").
+
+LICENSE GRANT
+-------------
+Subject to the terms and conditions of this Agreement, Owner grants you a limited, 
+non-exclusive, non-transferable, revocable license to:
+
+1. USE the Software for personal, educational, or evaluation purposes only.
+2. VIEW and STUDY the source code for learning and reference purposes.
+
+RESTRICTIONS
+------------
+You MAY NOT:
+
+1. COPY, MODIFY, ADAPT, ALTER, TRANSLATE, or CREATE DERIVATIVE WORKS from the 
+   Software without EXPLICIT WRITTEN PERMISSION from Ethereal Multimedia Technology.
+
+2. DISTRIBUTE, SUBLICENSE, LEASE, RENT, SELL, or COMMERCIALLY EXPLOIT the Software 
+   in any form.
+
+3. REVERSE ENGINEER, DECOMPILE, DISASSEMBLE, or attempt to derive the source code 
+   (except to the extent permitted by applicable law despite this restriction).
+
+4. REMOVE, ALTER, or OBSCURE any copyright, trademark, or proprietary rights notices 
+   in the Software.
+
+5. USE the Software in any PRODUCTION ENVIRONMENT or COMMERCIAL APPLICATION without 
+   a separate commercial license agreement.
+
+EXPLICIT PERMISSION REQUIREMENT
+-------------------------------
+**ANY adoption, editing, refactoring, modification, forking, or redistribution of 
+this codebase REQUIRES EXPLICIT WRITTEN PERMISSION from Ethereal Multimedia Technology.**
+
+To request permission, contact: Ethereal Multimedia Technology
+
+NO WARRANTY
+-----------
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, 
+INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A 
+PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT 
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION 
+OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE 
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+TERMINATION
+-----------
+This license terminates automatically if you breach any term. Upon termination, you 
+must cease all use and destroy all copies of the Software.
+
+GOVERNING LAW
+-------------
+This Agreement shall be governed by the laws of the jurisdiction where Ethereal 
+Multimedia Technology is established, without regard to conflict of law principles.
+
+CONTACT
+-------
+Ethereal Multimedia Technology
+R&D Division — Software Development
+Project: 12 Tone Matrix (2016)
+
+For licensing inquiries: [Contact Ethereal Multimedia Technology]
+
+---
+This license file must accompany all copies and distributions of the Software.
