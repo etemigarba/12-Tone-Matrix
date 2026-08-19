@@ -159,7 +159,7 @@ This document outlines the recommended structure for the 12 Tone Matrix GitHub W
 - Feature request process
 - Contact information
 - Community resources
-- Professional services (Ethereal Multimedia Technology)
+- Professional services (Etemi Joshua Garba)
 
 ---
 
@@ -227,7 +227,7 @@ Home
 * [Support](Support)
 
 ---
-*Copyright © 2016 Ethereal Multimedia Technology*
+*Copyright © 2016 Etemi Joshua Garba*
 ```
 
 ### Footer Template (_Footer.md)
@@ -236,7 +236,7 @@ Home
 ---
 **12 Tone Matrix** | [GitHub Repository](https://github.com/etemigarba/12-Tone-Matrix) | [Main README](../README.md)
 
-*Copyright © 2016 Ethereal Multimedia Technology. All rights reserved.*
+*Copyright © 2016 Etemi Joshua Garba. All rights reserved.*
 *Explicit permission required for adoption, editing, and refactoring.*
 ```
 
@@ -266,6 +266,6 @@ Home
 All wiki content is subject to the same [Proprietary License](../LICENSE) as the codebase.
 
 ```
-Copyright © 2016 Ethereal Multimedia Technology. All rights reserved.
+Copyright © 2016 Etemi Joshua Garba. All rights reserved.
 Explicit permission required for adoption, editing, and refactoring.
 ```

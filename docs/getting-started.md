@@ -279,4 +279,4 @@ java TwelveToneMatrix
 
 - **Documentation Issues**: Open a GitHub Issue
 - **Algorithm Questions**: Refer to twelve-tone theory references in README
-- **Permission Requests**: Contact Ethereal Multimedia Technology
+- **Permission Requests**: Contact Etemi Joshua Garba

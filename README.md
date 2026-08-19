@@ -172,21 +172,21 @@ Displaying the Pitch Class:
 
 Please read [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
 
-> **⚠️ Copyright Notice**: This project is the intellectual property of **Ethereal Multimedia Technology**. Explicit written permission is required for any adoption, editing, refactoring, or redistribution of this codebase.
+> **⚠️ Copyright Notice**: This project is the intellectual property of **Etemi Joshua Garba**. Explicit written permission is required for any adoption, editing, refactoring, or redistribution of this codebase.
 
 ## License
 
 This project is licensed under a **Proprietary License** — see the [LICENSE](LICENSE) file for details.
 
 ```
-Copyright © 2016 Ethereal Multimedia Technology. All rights reserved.
+Copyright © 2016 Etemi Joshua Garba. All rights reserved.
 Explicit permission required for adoption, editing, and refactoring.
 ```
 
 ## Support
 
 - **Issues**: [GitHub Issues](https://github.com/etemigarba/12-Tone-Matrix/issues)
-- **Owner**: Ethereal Multimedia Technology
+- **Owner**: Etemi Joshua Garba
 - **Repository**: https://github.com/etemigarba/12-Tone-Matrix
 
 ## References

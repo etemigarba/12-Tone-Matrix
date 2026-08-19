@@ -105,11 +105,11 @@ jobs:
 
       - name: Check copyright headers
         run: |
-          if ! grep -q "Ethereal Multimedia Technology" README.md; then
+          if ! grep -q "Etemi Joshua Garba" README.md; then
             echo "ERROR: Copyright notice missing from README.md"
             exit 1
           fi
-          if ! grep -q "Ethereal Multimedia Technology" LICENSE; then
+          if ! grep -q "Etemi Joshua Garba" LICENSE; then
             echo "ERROR: Copyright notice missing from LICENSE"
             exit 1
           fi

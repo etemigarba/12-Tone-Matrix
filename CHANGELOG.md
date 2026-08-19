@@ -144,7 +144,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Copyright
 
 ```
-Copyright © 2016 Ethereal Multimedia Technology. All rights reserved.
+Copyright © 2016 Etemi Joshua Garba. All rights reserved.
 Explicit permission required for adoption, editing, and refactoring.
 ```
 

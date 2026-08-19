@@ -42,7 +42,7 @@ These steps **must be performed manually** via the GitHub web interface — they
 | **Require signed commits** | Optional (recommended) |
 | **Require linear history** | ✅ Checked |
 | **Do not allow bypassing the above settings** | ✅ Checked |
-| **Restrict who can push to matching branches** | ✅ Checked (add Ethereal Multimedia Technology team) |
+| **Restrict who can push to matching branches** | ✅ Checked (add Etemi Joshua Garba team) |
 
 4. Click **Create**
 
@@ -126,7 +126,7 @@ For deployment workflows:
 
 1. Go to: https://github.com/etemigarba/12-Tone-Matrix/settings/access
 2. Add teams/users with appropriate roles:
-   - **Admin**: Ethereal Multimedia Technology owners
+   - **Admin**: Etemi Joshua Garba owners
    - **Write**: Approved contributors (with permission)
    - **Read**: Public (for visibility)
 

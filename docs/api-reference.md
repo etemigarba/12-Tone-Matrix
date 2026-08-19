@@ -8,7 +8,7 @@
 
 **Since**: 2016
 
-**Author**: Ethereal Multimedia Technology R&D
+**Author**: Etemi Joshua Garba R&D
 
 ---
 

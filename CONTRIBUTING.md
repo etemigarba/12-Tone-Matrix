@@ -2,14 +2,14 @@
 
 ## ⚠️ CRITICAL: Copyright & Permission Notice
 
-**This project is the exclusive intellectual property of Ethereal Multimedia Technology.**
+**This project is the exclusive intellectual property of Etemi Joshua Garba.**
 
-> **ANY contribution, adoption, editing, refactoring, forking, or redistribution of this codebase REQUIRES EXPLICIT WRITTEN PERMISSION from Ethereal Multimedia Technology.**
+> **ANY contribution, adoption, editing, refactoring, forking, or redistribution of this codebase REQUIRES EXPLICIT WRITTEN PERMISSION from Etemi Joshua Garba.**
 
 Before submitting any contribution, you MUST:
-1. Obtain written permission from Ethereal Multimedia Technology
+1. Obtain written permission from Etemi Joshua Garba
 2. Sign a Contributor License Agreement (CLA) if required
-3. Agree that all contributions become property of Ethereal Multimedia Technology
+3. Agree that all contributions become property of Etemi Joshua Garba
 
 **Unauthorized contributions will be rejected and may result in legal action.**
 
@@ -60,7 +60,7 @@ git push origin feature/your-feature-name
 ## Contribution Process
 
 ### 1. Pre-Contribution Requirements
-- [ ] Written permission from Ethereal Multimedia Technology obtained
+- [ ] Written permission from Etemi Joshua Garba obtained
 - [ ] Issue discussed and approved (for new features)
 - [ ] CLA signed (if applicable)
 
@@ -278,7 +278,7 @@ Current version: **1.0.0** (2016)
 
 ## Release Process
 
-1. **Permission** from Ethereal Multimedia Technology for release
+1. **Permission** from Etemi Joshua Garba for release
 2. **Update** `CHANGELOG.md` with version and changes
 3. **Tag** release: `git tag -a v1.1.0 -m "Release v1.1.0"`
 4. **Build** artifacts (if applicable)
@@ -288,7 +288,7 @@ Current version: **1.0.0** (2016)
 
 ## Getting Help
 
-- **Permission Questions**: Contact Ethereal Multimedia Technology directly
+- **Permission Questions**: Contact Etemi Joshua Garba directly
 - **Technical Questions**: Open GitHub Issue (with permission)
 - **Algorithm Questions**: See references in [README.md](README.md#references)
 
@@ -297,8 +297,8 @@ Current version: **1.0.0** (2016)
 ## Attribution
 
 All contributors agree that:
-1. Contributions are work-for-hire for Ethereal Multimedia Technology
-2. Copyright transfers to Ethereal Multimedia Technology
+1. Contributions are work-for-hire for Etemi Joshua Garba
+2. Copyright transfers to Etemi Joshua Garba
 3. Moral rights are waived to the extent permitted by law
 4. Contributions may be used commercially without additional compensation
 
@@ -310,4 +310,4 @@ By contributing, you agree your contributions are licensed under the same [Propr
 
 ---
 
-**Remember: NO contribution is accepted without EXPLICIT WRITTEN PERMISSION from Ethereal Multimedia Technology.**
+**Remember: NO contribution is accepted without EXPLICIT WRITTEN PERMISSION from Etemi Joshua Garba.**
